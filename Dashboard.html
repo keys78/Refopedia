@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+    <link rel="icon" href="favicon (1).ico">
+</head>
+<body class="bg-gray-50 blackie p-1">
+
+
+    
+
+
+
+    <header id="head" class="blackies h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded border border-gray-300 pb-6 relative">
+        <div class="conta m-auto cage">
+            <!-- <div><span class="text-4xl text-gray-700"style="font-family: 'Dancing Script', cursive;" >Rappel</span></div> -->
+            
+
+            <div id="mySidenav" class="sidenav blackiess absolute top-0 left-0 px-3">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="pt-6 text-2xl text-gray-100"style="font-family: 'Dancing Script', cursive;" ><i class="text-red-500 fas fa-feather"></i>Refopedia</div> 
+
+                <!-- <button id="darkmode"class="bg-white py-1 px-2 rounded hover:bg-gray-100 text-xs mt-10 ml-2 focus:outline-none">DARK MODE TOGGLE</button> -->
+
+
+                    <div class="class flex justify-between items-center mt-20">
+                    <label>
+                        <input id="darkmode" type="checkbox">
+                        <span ></span>
+                        <i class="indicator"></i>
+                    </label>
+                    <span class="text-white -mt-3">Nightmode toggle</span>
+                    </div>
+                    
+
+                <div class="class flex justify-between items-center mt-16">
+                <label>
+                    <input id="indicate" type="checkbox">
+                    <span ></span>
+                    <i class="indicator"></i>
+                </label>
+                <span class="text-white -mt-3">Play cool tunnage</span>
+                </div>
+
+
+                <div class="nabfoot absolute bottom-0 right-16 text-center">
+                    <h1 class="flex"></h1>
+                    <i class="text-gray-400 hover:text-white fab fa-twitter"></i>
+                    <i class="text-gray-400 hover:text-white fab fa-facebook"></i>
+                  </h1>
+                  <p class="text-gray-200">seismic ideas | &copy; 2021.</p>
+                  </div>
+              </div>
+
+
+            <div class="flex justify-between items-center">
+                <div class="">
+                    <span class="hover:text-gray-100" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
+            
+                <div class="flex">
+                 
+                    <h1><i class="text-xl text-red-700 animate-pulse fas fa-heartbeat cursor-pointer mr-5"></i></h1>
+                    <h1><i class="text-xl hover:text-blue-500 far fa-bell cursor-pointer"></i></h1>
+
+                </div>
+
+            </div>
+
+            
+            <div class="">
+                <form action="https://www.google.com/search" method="get" target="_blank" id="search-form" class="flex">
+                  <input id="filter" class="text-gray-50 py-1 px-1 w-full focus:outline-none bg-transparent border-b border-white placeholder-white" name="q" type="text" placeholder="search lists on google" autocomplete="off" autofocus>
+                  <!--button type="button"><i class="fas fa-microphone"></i></button>-->
+                </form>
+                <p class="info"></p>
+              </div>
+
+
+
+              
+                    <!---Welcome Area-->
+
+            <div class="">
+                <h1 id="Welcome" class="text-3xl mt-3 text-gray-700" style="font-family: 'Dancing Script', cursive;" >Welcome <span id="namie" class="text-gray-100"></span></h1>
+            </div>
+
+
+            <h1 class="text-base mt-10 opacity-80 text-white" >CATEGORIES</h1>
+
+
+            <div class="mt-4 flex gap-4">
+
+                <div class="Business w-full pt-4 pb-7 text-white rounded px-3 dreamy">
+
+                    <span id="countrie" class="opacity-90">0</span> <span class="opacity-90">Task(s)</span>
+                    <h2 class="text-3xl opacity-80">Business</h2>
+                    
+                    <div class="border-b-2 border-white w-full mt-3"></div>
+                </div>
+
+                <div class="school w-full pt-4 pb-7 text-white rounded px-3 dreamy">
+
+                    <h1 class="text-base opacity-90">0 Task(s)</h1>
+                    <h2 class="text-3xl opacity-80">School</h2>
+                    
+                    <div class="border-b-2 border-white w-full mt-3"></div>
+                </div>
+
+            </div>
+
+            <h1 class="text-base mt-10 opacity-80 text-white">TODAY'S TASKS</h1>
+
+            <!------TASK LISTS AREA----------->
+            <div class="mt-3">
+                <ul class="tasks">
+
+                    <!-- <li class="ok"><span class="check"><i class="far fa-check-circle"></i></span> Go to school<span class="kala"><i class="fas fa-trash-alt"></i></span></li> -->
+                    
+
+                </ul>
+            </div>
+
+            <input type="submit" value="CLEAR ALL" class="clear-tasks -mb-12 py-1 w-5/12 rounded">
+
+            <div class="Addbutton">
+                <h1 id="Plus" title="Add a task" class="mina text-3xl absolute bottom-4 right-4"><i class=" fas fa-plus-circle"></i></h1>
+
+                <div class="showTaskArea h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded">
+                    <form id="task-form" class="w-11/12 m-auto pl-8">
+
+                        <div class="flex justify-between w-full mt-4"><h1 class="text-white">.</h1><h1 id="close-input"><span class=""><i class="rounded-full py-1 px-1 bg-red-500 text-white hover:bg-red-700 cursor-pointer fas fa-times"></i></span></h1></div>
+
+                        <div class="warn py-2 px-3 text-red border border-red-500 w-10/12 bg-red-100 my-3"><i class="pr-3 text-red-500 fas fa-exclamation-circle"></i>Input field cannot be empty</div>
+
+                        <input id="input-task" maxlength="40" class=" w-11/12 m-auto focus:outline-none py-2 px-3 mt-14" type="text" placeholder="Enter task">
+                        <span id="count" class="text-blue-800 font-semibold"></span>
+                        <br>
+                        <input  id="submit-task" class="btnss additive mt-56 mb-14 sm:ml-60 ml-40 w-5/12 py-2 focus:outline-none cursor-pointer" type="submit"value = "ADD TASK" >
+                        
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+        
+    </header>
+    
+
+
+    
+
+   
+
+    <audio autoplay loop class="egwu" id="mySong">
+        <source src="Lionel Richie - How Long (minus).mp3" type="audio/mp3">
+      </audio>
+
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', getInfo)
+        const newDat = document.querySelector('#namie');
+      
+      function getInfo() {
+        const infom = localStorage.getItem('name');
+        newDat.appendChild(document.createTextNode(infom));
+      } 
+      
+      </script>
+
+
+    <script src="app.js"></script>
+    <script src="voice.js"></script>
+</body>
+</html>

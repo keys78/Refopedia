@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+    <link rel="icon" href="favicon (1).ico">
+</head>
+<body class="bg-gray-50 blackie">
+
+
+
+
+ <!---- login -->
+ <div class="LOGIN h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded relative border border-gray-300 bg-green-50">
+    <h1 class="absolute top-2 left-2 text-blue-500 hover:text-blue-800 cursor-pointer">Cancel</h1>
+
+ <div class="w-10/12 m-auto mt-32">
+
+    <div class="warn py-2 px-3 text-red border border-red-500 w-10/12 bg-red-100 my-3"><i class="pr-3 text-red-500 fas fa-exclamation-circle"></i>Input field cannot be empty</div>
+
+     <div class="input-group border border-current bg-white px-2 rounded mt-6 flex">
+        <i class="mt-2 mr-2 text-blue-600 fas fa-user"></i><br>
+         <input class="w-full py-1 focus:outline-none text-black" type="text" name="firstname" id="firstname" placeholder="Enter firstname" />
+     </div>
+
+
+        <div class="input-groupt mt-6 border border-current bg-white px-2 rounded flex">
+            <i class="mt-2 mr-2 text-blue-500 fas fa-lock"></i>
+            <div class="flex justify-between items-center">
+                <input class="w-full py-1 focus:outline-none text-black" type="password" name="password" id="password" placeholder="Enter password"/><i class="ml-44 text-blue-600 text-black far fa-eye" id="togglePassword"></i>
+            </div>
+        </div>
+
+        <div class="">
+            <input type="checkbox" value=""><span class="text-sm text-gray-500 ml-2 mt-4">I agree to Refopedia's T&C's</span>
+        </div>
+
+        <input id="mybtn" type="submit" value="LOG IN" class="cursor-pointer focus:outline-none bg-blue-600 w-full py-1 px-2 mt-12 hover:bg-blue-800 text-white">
+
+   
+  </div>
+
+</div>
+
+
+<div class="loader bg-black w-4/12 rounded">
+    <h1 class="text-black pb-44">.</h1>
+
+    <img class="w-40 h-40 ml-40" src="loaderer.gif">
+
+</div>
+
+
+
+    <script>
+
+     const firstName = document.getElementById('firstname');
+     const mybtn = document.getElementById('mybtn');
+     const namie = document.getElementById('namie');
+     const password = document.getElementById('password');
+     const loginPanel = document.querySelector('.LOGIN');
+     const passcover = document.querySelector('.input-groupt');
+     const firstcover = document.querySelector('.input-group');
+    
+    
+    
+  
+     mybtn.addEventListener('click', checkit);
+      
+     function checkit() {
+         if(firstName.value === ''){
+             alert("Input fields cannot be empty")
+             firstcover.style.background = "rgb(255,200,200)";
+             firstName.style.background = "rgb(255,200,200)"
+         }
+        
+         if(password.value <= 8) {
+             passcover.style.background = "rgb(255,200,200)";
+             password.style.background = "rgb(255,200,200)";
+
+         } else {
+            loadout();
+            window.location = "Dashboard.html";
+           
+         }
+         
+         localStorage.setItem('name', firstName.value);
+        
+    
+     } 
+
+
+
+     const loader = document.querySelector(".loader");
+
+
+     loader.addEventListener("click", loadout)
+      function loadout() {
+          
+     loader.style.display = "block"; 
+
+     setTimeout(function(){
+         loader.remove()}, 3000);
+    
+
+     }
+
+    </script>
+
+
+<!-- <script src="app.js"></script> -->
+</body>
+</html>

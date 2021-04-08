@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Web friendly note lister</title>
+    <link rel="icon" href="favicon (1).ico">
+</head>
+<body class="bg-gray-50 blackie">
+
+
+    
+<div id="loader" class="h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded">
+       
+    <h1 class="ld text-4xl color-white"style="font-family: 'PT Sans Narrow', sans-serif;">Seismic ideas &#8482;</h1>
+</div>
+
+
+<!----- COVER ----->
+<div class="COVER h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded relative">
+    <h1 class="text-white absolute top-2 right-2">English</h1>
+
+     <a href="Login.html"><button id="signin"class=" absolute bottom-20 left-24 w-7/12 m-auto bg-white py-1 px-2 border-none text-base focus:outline-none cursor-pointer">SIGN IN<i class="flowi pl-3 fas fa-chevron-up"></i></button></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    var loader;
+    function loadNow(opacity) {
+        if(opacity <= 0) {
+            displayContent();
+        }
+        else {
+            loader.style.opacity = opacity;
+            window.setTimeout(function() {
+                loadNow(opacity - 0.99999)
+            }, 3000);
+        }
+    }
+    function displayContent() {
+        loader.style.display = 'none';
+        // document.getElementById('content').style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        loader = document.getElementById('loader');
+        loadNow(1)
+    });
+
+</script>
+
+
+
+
+<!-- <input id="textarea"class="border-2 border-current" name="text"
+maxlength="10">
+<span id="count" class="border border-current font-semibold"></span>
+
+    <script>
+        var el_t = document.getElementById('textarea');
+var length = el_t.getAttribute("maxlength");
+var el_c = document.getElementById('count');
+el_c.innerHTML = length;
+el_t.onkeyup = function () {
+  document.getElementById('count').innerHTML = (length - this.value.length);
+};
+
+    </script> -->
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

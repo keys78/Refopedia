@@ -1,0 +1,454 @@
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(13, 0, 83);
+    overflow-x: hidden;
+    transition: all linear 0.5s;
+  }
+  
+  .sidenav a {
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+   position: absolute;
+   top: 10px;
+   right:30px;
+   font-size: 35px;
+  }
+  
+   @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.blackie{
+    background:white;
+    transition: all linear 0.5s;
+}
+
+.blackie.show{
+    background: black;
+    transition: all linear 0.5s;
+}
+
+.blackies{
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #e8faff);
+    transition: all linear 0.5s;
+}
+
+.blackies.show{
+    background: black;
+    color:white;
+    transition: all linear 0.5s;
+}
+
+
+.blackiess{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
+    transition: all linear 0.5s;
+}
+
+.blackiess.show{
+    background: black;
+    color:white;
+    transition: all linear 0.5s;
+}
+
+
+
+
+
+
+  .cage{
+      width:97%;
+  }
+
+
+  .Business{
+    background: linear-gradient(to right, #141e30, #243b55);
+  }
+  .school{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  }
+
+  #Plus{
+      color:rgb(6, 6, 236);
+      transition: all linear 0.3s;
+  }
+
+  #Plus:hover{
+      color:rgb(0, 231, 77);
+      transform: rotate(180deg);
+  }
+
+
+
+  .ok{
+      /* display:flex;
+      justify-content:space-between;
+      align-items: center; */
+      width:100%;
+      display: inline-block;
+      background: white;
+      padding:10px 4px;
+      border-radius: 10px;
+      border-left:5px solid blue;
+      color:rgb(54, 54, 54);
+      font-size: 20px;
+      margin:7px 4px;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+                    0 2px 2px rgba(0,0,0,0.20), 
+                    0 4px 4px rgba(0,0,0,0.15), 
+                    0 8px 8px rgba(0,0,0,0.10),
+                    0 16px 16px rgba(0,0,0,0.05);
+    
+      font-weight: 400;
+      transition: all linear 0.1s;
+  }
+
+  .ok:hover{
+    transform: scale(0.98, 1.0);
+    background-color: rgb(248, 248, 248);
+  }
+
+
+
+  .fa-check-circle{
+      color:black;
+      margin-right: 7px;
+      transition: all linear 0.3s;
+      cursor: pointer;
+      margin-right: -100px;
+      margin-left: 30px;
+  }
+
+  .fa-check-circle:hover{
+    color:rgb(4, 187, 4);
+    
+  }
+
+
+  
+  .kala{
+    color:black;
+    /* margin-left:300px; */
+    margin-left:120px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.kala:hover{
+    color:red;
+}
+
+
+
+
+
+
+
+  .dreamy{
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+                    0 2px 2px rgba(0,0,0,0.15), 
+                    0 4px 4px rgba(0,0,0,0.15), 
+                    0 8px 8px rgba(0,0,0,0.15);
+
+  }
+
+
+  #submit-task{
+    background: linear-gradient(to right, #373b44, #4286f4);
+    color:white;
+    transition: linear 0.5s all;
+    border-radius: 10px;
+
+  }
+  
+  #submit-task:hover{
+    background: linear-gradient(to right, #4286f4, #373b44);
+
+  }
+
+  .clear-tasks{
+    background: linear-gradient(to right, #373b44, #4286f4);
+    transition: linear 0.5s all;
+    color:white;
+  }
+
+  .clear-tasks:hover{
+    background: red
+  }
+
+  .showTaskArea{
+    display: none;
+    background:rgb(210, 255, 255);
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    transition: linear all 0.7s;
+  }
+
+  .warn{
+      display: none;
+  }
+
+  .fa-bell{
+      animation: jingle 2s linear infinite;
+  }
+
+  @keyframes jingle{
+      0%{
+        transform: rotate(35deg);
+      }
+      50%{
+        transform: rotate(0deg);
+      }
+    65%{
+        transform: rotate(-35deg);
+      }
+    85%{
+        transform: rotate(-12deg);
+      }
+      100%{
+        transform: rotate(35deg);
+      }
+  }
+
+
+
+
+
+  .mina{
+      animation: mina 10s linear infinite;
+  }
+
+  @keyframes mina{
+      0%{
+        transform: rotate(-360deg);
+      }
+      40%{
+        transform: rotate(40deg);
+      }
+    55%{
+        transform: rotate(100deg);
+      }
+    70%{
+        transform: rotate(180deg);
+      }
+    85%{
+        transform: rotate(240deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+  }
+
+
+
+
+
+
+  .COVER{
+      /* height:60.7vh; */
+      background-image: url('firstcover.jpg');
+      transition:all linear 0.7s;
+  }
+
+  #signin{
+      transition: linear all 0.6s;
+      font-weight: 700;
+  }
+
+  #signin:hover{
+      color:rgb(245, 0, 204);
+      background:black;
+      border:1px solid rgb(245, 0, 204);
+  }
+
+
+
+  .LOGIN{
+    transition: linear all 0.6s;
+  }
+
+  #head{
+    transition: linear all 0.6s;
+  }
+
+
+
+.flowi{
+    animation: flowie 2s linear infinite;
+}
+
+@keyframes flowie{
+    0%{
+      transform: translateY(10px);
+    }
+    25%{
+      transform: translateY(-10px);
+    }
+    75%{
+      transform: translateY(-5px);
+    }
+    100%{
+      transform: translateY(10px);
+    }
+}
+
+
+.loader {
+    display: none;
+    position: absolute;
+    top:0;
+    right:510px;
+    height:100vh;
+    transition: linear all 0.6s;
+}
+
+
+
+
+
+label{
+    position: relative;
+    margin:5px 0;
+    cursor: pointer;
+}
+label input{
+    appearance: none;
+    display:none;
+}
+
+label span{
+    position:relative;
+    display: block;
+    width:80px;
+    height:40px;
+    background:#222;
+    border-radius:40px;
+    box-shadow:inset 0 2px 15px rgba(0,0,0,0.2),
+               inset 0 2px 15px rgba(0,0,0,0.2),
+               inset 0 -1px 1px rgba(0,0,0,0.2)
+}
+
+label .indicator{
+    position: absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:40px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5),
+                inset 0 1px 1px rgba(0,0,0,0.5);
+    transition:0.5s ;
+    transform: scale(0.9);
+}
+
+
+label input:checked ~ .indicator{
+    left:40px;
+}
+
+label .indicator::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50% -50%);
+    width:5px;
+    height:5px;
+    background:#f00;
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: 0 0 2px #f00,
+                    0 0 5px #f00,
+                    0 0 10px #f00,
+                    0 0 15px #f00,
+                    0 0 20px #f00,
+                    0 0 25px #f00,
+                    0 0 30px #f00,
+                    0 0 40px #f00,
+}
+
+label input:checked ~ .indicator::before{
+    background:#0f0;
+    box-shadow: 0 0 2px #0f0,
+                    0 0 5px #0f0,
+                    0 0 10px #0f0,
+                    0 0 15px #0f0,
+                    0 0 20px #0f0,
+                    0 0 25px #0f0,
+                    0 0 30px #0f0,
+                    0 0 40px #0f0,
+}
+
+/* 
+#loade{
+        display: none;
+        background-image: url('loader.gif');
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        z-index: 1;
+        overflow:visible ;
+        transition: linear 2s;
+} */
+
+
+
+#loader{
+  z-index: 3;
+  overflow:visible ;
+  background-color: black;
+  /* background: #000 url('loader.gif') no-repeat center center; */
+  transition: all 1s;
+}
+
+.ld{
+  position: absolute;
+  top:45%;
+  left:43%;
+  transform: translate(-50%  -50%);
+  animation: fade 3s ease-in-out infinite;
+}
+
+@media (max-width: 540px){
+  .ld{
+    left:26%;
+  }
+}
+
+
+@keyframes fade{
+  0%{
+      color:transparent;
+  }
+  25%{
+      color:rgb(226, 226, 226);
+  }
+  50%{
+      color:rgb(255, 255, 255);
+  }
+  75%{
+      color:rgb(226, 226, 226);
+  }
+  100%{
+      color:transparent;
+  }
+}
