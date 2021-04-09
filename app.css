@@ -65,6 +65,7 @@
     background: black;
     color:white;
     transition: all linear 0.5s;
+   
 }
 
 
@@ -398,17 +399,6 @@ label input:checked ~ .indicator::before{
                     0 0 40px #0f0,
 }
 
-/* 
-#loade{
-        display: none;
-        background-image: url('loader.gif');
-        position: fixed;
-        width:100%;
-        height: 100vh;
-        z-index: 1;
-        overflow:visible ;
-        transition: linear 2s;
-} */
 
 
 
@@ -432,6 +422,12 @@ label input:checked ~ .indicator::before{
   .ld{
     left:26%;
   }
+  #signin{
+    bottom: 200px;
+  }
+
+  
+  
 }
 
 
