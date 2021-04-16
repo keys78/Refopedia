@@ -21,7 +21,7 @@
 
  <!---- login ---------------------------------->
  <div class="LOGIN h-screen xl:w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 w-full m-auto rounded relative border border-gray-300 bg-green-50">
-    <h1 class="absolute top-2 left-2 text-blue-500 hover:text-blue-800 cursor-pointer">Cancel</h1>
+    <h1 id="moveBack" class="absolute top-2 left-2 text-blue-500 hover:text-blue-800 cursor-pointer">Cancel</h1>
 
  <div class="w-10/12 m-auto mt-32">
 
@@ -71,7 +71,7 @@
      const passcover = document.querySelector('.input-groupt');
      const firstcover = document.querySelector('.input-group');
     
-    
+     const moveBack = document.getElementById('moveBack');
     
   
      mybtn.addEventListener('click', checkit);
@@ -109,11 +109,17 @@
      loader.style.display = "block"; 
 
      setTimeout(function(){
-         loader.remove()}, 3000);
+         loader.remove()
+        }, 3000);
     
 
      }
 
+
+     moveBack.addEventListener('click', loKo)
+     function loKo (){
+        window.location.href = "index.html";
+     }
     </script>
 
 

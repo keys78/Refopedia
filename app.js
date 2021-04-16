@@ -367,4 +367,3 @@ function playPause() {
 }
 
 box.addEventListener("click", playPause);
-
